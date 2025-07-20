@@ -1,31 +1,135 @@
 [
-    {
-      "id": 1,
-      "name": "Classic Hoodie",
-      "price": 39.99,
-      "imageUrl": "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2070&auto=format&fit=crop",
-      "description": "A comfortable and stylish hoodie, perfect for any occasion."
-    },
-    {
-      "id": 2,
-      "name": "Stainless Steel Water Bottle",
-      "price": 14.00,
-      "imageUrl": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1887&auto=format&fit=crop",
-      "description": "Keeps your drinks cold for 24 hours and hot for 12 hours."
-    },
-    {
-      "id": 3,
-      "name": "Minimalist Leather Wallet",
-      "price": 45.50,
-      "imageUrl": "https://images.unsplash.com/photo-1613045209829-66c256316279?q=80&w=1887&auto=format&fit=crop",
-      "description": "Slim, sleek, and built to last with genuine leather."
-    },
-    {
-      "id": 4,
-      "name": "Canvas Tote Bag",
-      "price": 25.00,
-      "imageUrl": "https://images.unsplash.com/photo-1579482248550-388b14a8a513?q=80&w=1887&auto=format&fit=crop",
-      "description": "A durable and spacious tote bag for your daily needs."
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Nigerian Local Rice (50kg)",
+    "price": 85000,
+    "category": "Rice & Grains",
+    "imageUrl": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?q=80&w=2000&auto=format&fit=crop",
+    "description": "Premium quality Nigerian local rice, stone-free and well-processed. Perfect for jollof rice and other Nigerian dishes.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Semolina (10kg)",
+    "price": 12500,
+    "category": "Flour & Cereals",
+    "imageUrl": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=2000&auto=format&fit=crop",
+    "description": "High-quality semolina flour for making tuwo, couscous, and other delicious meals.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Palm Oil (25 Litres)",
+    "price": 45000,
+    "category": "Oils & Spices",
+    "imageUrl": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=2000&auto=format&fit=crop",
+    "description": "Pure red palm oil, rich in vitamins and perfect for authentic Nigerian cooking.",
+    "unit": "container",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Brown Beans (50kg)",
+    "price": 95000,
+    "category": "Beans & Legumes",
+    "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2000&auto=format&fit=crop",
+    "description": "Premium brown beans, carefully selected and processed. Great for moi moi, akara, and beans porridge.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Garri (25kg)",
+    "price": 15000,
+    "category": "Cassava Products",
+    "imageUrl": "https://images.unsplash.com/photo-1597735638852-2cee51c3d2b3?q=80&w=2000&auto=format&fit=crop",
+    "description": "Fresh and crunchy garri made from high-quality cassava. Perfect for drinking or eating.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Groundnut Oil (25 Litres)",
+    "price": 52000,
+    "category": "Oils & Spices",
+    "imageUrl": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=2000&auto=format&fit=crop",
+    "description": "Pure groundnut oil extracted from quality groundnuts. Ideal for frying and cooking.",
+    "unit": "container",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Plantain Flour (5kg)",
+    "price": 8500,
+    "category": "Flour & Cereals",
+    "imageUrl": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?q=80&w=2000&auto=format&fit=crop",
+    "description": "Nutritious plantain flour, gluten-free and perfect for making swallow and baking.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Dried Fish (Assorted)",
+    "price": 25000,
+    "category": "Protein",
+    "imageUrl": "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=2000&auto=format&fit=crop",
+    "description": "Assorted dried fish including croaker, catfish, and mackerel. Properly smoked and preserved.",
+    "unit": "kg",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 9,
+    "name": "Crayfish (Ground) - 2kg",
+    "price": 18000,
+    "category": "Oils & Spices",
+    "imageUrl": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=2000&auto=format&fit=crop",
+    "description": "Freshly ground crayfish, adds authentic Nigerian flavor to your soups and stews.",
+    "unit": "pack",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Yam Flour (Elubo) - 10kg",
+    "price": 14000,
+    "category": "Flour & Cereals",
+    "imageUrl": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=2000&auto=format&fit=crop",
+    "description": "Premium yam flour for making amala. Smooth texture and authentic taste guaranteed.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Honey (Pure) - 1 Litre",
+    "price": 8500,
+    "category": "Natural Products",
+    "imageUrl": "https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?q=80&w=2000&auto=format&fit=crop",
+    "description": "100% pure natural honey, unprocessed and rich in nutrients. Great for health and cooking.",
+    "unit": "bottle",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": 12,
+    "name": "Tiger Nuts (Fresh) - 5kg",
+    "price": 12000,
+    "category": "Natural Products",
+    "imageUrl": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=2000&auto=format&fit=crop",
+    "description": "Fresh tiger nuts, carefully selected and cleaned. Perfect for making kunun aya or eating fresh.",
+    "unit": "bag",
+    "inStock": true,
+    "featured": false
+  }
+]
   
