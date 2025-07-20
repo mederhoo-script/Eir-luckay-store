@@ -7,7 +7,7 @@ export const CartProvider = ({ children }) => {
     try {
       const localData = localStorage.getItem('cartItems');
       return localData ? JSON.parse(localData) : [];
-    } catch (error) {
+    } catch {
       return [];
     }
   });

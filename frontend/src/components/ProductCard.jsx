@@ -42,8 +42,8 @@ const ProductCard = ({ product }) => {
         <div className="absolute top-3 right-3">
           <span className={`px-2 py-1 rounded-full text-xs font-medium ${
             product.inStock 
-              ? 'bg-green-100 text-green-800' 
-              : 'bg-red-100 text-red-800'
+              ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' 
+              : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
           }`}>
             {product.inStock ? 'In Stock' : 'Out of Stock'}
           </span>
@@ -52,20 +52,20 @@ const ProductCard = ({ product }) => {
 
       <div className="p-5">
         {/* Category */}
-        <p className="text-sm text-brand-green font-medium mb-2">{product.category}</p>
+        <p className="text-sm text-brand-green dark:text-brand-green font-medium mb-2">{product.category}</p>
         
         {/* Product Name */}
-        <h3 className="text-lg font-semibold text-brand-brown line-clamp-2 mb-2 group-hover:text-brand-green-dark transition-colors">
+        <h3 className="text-lg font-semibold text-brand-brown dark:text-brand-brown line-clamp-2 mb-2 group-hover:text-brand-green-dark dark:group-hover:text-brand-green transition-colors">
           {product.name}
         </h3>
         
         {/* Description */}
-        <p className="text-gray-600 text-sm line-clamp-3 mb-4">{product.description}</p>
+        <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4">{product.description}</p>
         
         {/* Unit Info */}
         <div className="flex items-center gap-2 mb-4">
-          <Package size={16} className="text-brand-green" />
-          <span className="text-sm font-medium text-gray-700">
+          <Package size={16} className="text-brand-green dark:text-brand-green" />
+          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
             Per {product.unit}
           </span>
         </div>
@@ -76,7 +76,7 @@ const ProductCard = ({ product }) => {
             <span className="text-2xl font-bold text-brand-green">
               {formatPrice(product.price)}
             </span>
-            <span className="text-xs text-gray-500">per {product.unit}</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400">per {product.unit}</span>
           </div>
           
           <button
@@ -85,7 +85,7 @@ const ProductCard = ({ product }) => {
             className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all duration-200 ${
               product.inStock
                 ? 'btn-primary hover:scale-105 active:scale-95'
-                : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'
             }`}
           >
             <ShoppingCart size={18} />

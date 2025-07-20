@@ -58,18 +58,29 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 134 45% 65%;
+
+    /* Dark mode brand colors */
+    --brand-green: 134 45% 65%; /* Lighter green for dark mode */
+    --brand-green-light: 134 35% 75%; /* Even lighter for accents */
+    --brand-green-dark: 134 55% 35%; /* Darker green for contrast */
+    --brand-orange: 24 85% 63%; /* Slightly muted orange */
+    --brand-orange-light: 24 90% 75%; /* Light orange for highlights */
+    --brand-cream: 0 0% 8%; /* Dark background instead of cream */
+    --brand-brown: 30 15% 85%; /* Light brown for text in dark mode */
+    --brand-brown-light: 30 8% 25%; /* Dark brown for borders */
   }
 }
 
 @layer base {
   body {
-    @apply text-foreground font-sans;
+    font-family: Inter, system-ui, sans-serif;
+    color: hsl(var(--foreground));
     background: hsl(var(--brand-cream));
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    font-family: Poppins, system-ui, sans-serif;
   }
 }
 
@@ -89,16 +100,16 @@
 
   /* Card Components */
   .card-product {
-    @apply bg-white rounded-xl shadow-brand-sm hover:shadow-brand-lg transition-all duration-300 overflow-hidden border border-brand-brown-light/20;
+    @apply bg-white dark:bg-card rounded-xl shadow-brand-sm hover:shadow-brand-lg transition-all duration-300 overflow-hidden border border-brand-brown-light/20 dark:border-border;
   }
 
   .card-elevated {
-    @apply bg-white rounded-xl shadow-brand-md border border-brand-brown-light/30;
+    @apply bg-white dark:bg-card rounded-xl shadow-brand-md border border-brand-brown-light/30 dark:border-border;
   }
 
   /* Input Components */
   .input-field {
-    @apply w-full px-4 py-3 border border-brand-brown-light rounded-lg focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors duration-200 bg-white;
+    @apply w-full px-4 py-3 border border-brand-brown-light dark:border-border rounded-lg focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors duration-200 bg-white dark:bg-card text-foreground;
   }
 
   /* Badge Components */
