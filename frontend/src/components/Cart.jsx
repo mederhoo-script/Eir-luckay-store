@@ -88,7 +88,7 @@ const Cart = ({ isOpen, onClose }) => {
 
       {/* Cart Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-full max-w-lg bg-white shadow-2xl transform transition-all duration-300 ease-in-out z-50 ${
+        className={`fixed top-0 right-0 h-full w-full max-w-lg bg-white dark:bg-card shadow-2xl transform transition-all duration-300 ease-in-out z-50 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -116,9 +116,9 @@ const Cart = ({ isOpen, onClose }) => {
           <div className="flex-grow overflow-y-auto">
             {cartItems.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center p-8">
-                <ShoppingBag className="w-16 h-16 text-gray-300 mb-4" />
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Your cart is empty</h3>
-                <p className="text-gray-600">Add some delicious foodstuff to get started!</p>
+                <ShoppingBag className="w-16 h-16 text-gray-300 dark:text-gray-600 mb-4" />
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">Your cart is empty</h3>
+                <p className="text-gray-600 dark:text-gray-400">Add some delicious foodstuff to get started!</p>
               </div>
             ) : (
               <div className="p-6 space-y-4">
@@ -133,9 +133,9 @@ const Cart = ({ isOpen, onClose }) => {
                           className="w-20 h-20 object-cover rounded-lg"
                         />
                         <div className="flex-grow">
-                          <h3 className="font-semibold text-brand-brown line-clamp-2">{item.name}</h3>
-                          <p className="text-sm text-gray-600">{item.category}</p>
-                          <p className="text-brand-green font-bold">{formatPrice(item.price)}</p>
+                          <h3 className="font-semibold text-brand-brown dark:text-brand-brown line-clamp-2">{item.name}</h3>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">{item.category}</p>
+                          <p className="text-brand-green dark:text-brand-green font-bold">{formatPrice(item.price)}</p>
                           
                           {/* Quantity Controls */}
                           <div className="flex items-center gap-3 mt-3">
@@ -177,7 +177,7 @@ const Cart = ({ isOpen, onClose }) => {
 
                 {/* Order Summary */}
                 <div className="card-elevated p-4 space-y-3">
-                  <h3 className="font-semibold text-brand-brown">Order Summary</h3>
+                  <h3 className="font-semibold text-brand-brown dark:text-brand-brown">Order Summary</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span>Subtotal:</span>
@@ -201,7 +201,7 @@ const Cart = ({ isOpen, onClose }) => {
 
                 {/* Customer Information */}
                 <div className="card-elevated p-4 space-y-4">
-                  <h3 className="font-semibold text-brand-brown flex items-center gap-2">
+                  <h3 className="font-semibold text-brand-brown dark:text-brand-brown flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
                     Delivery Information
                   </h3>
@@ -249,10 +249,10 @@ const Cart = ({ isOpen, onClose }) => {
 
           {/* Cart Footer */}
           {cartItems.length > 0 && (
-            <div className="p-6 border-t bg-gray-50">
-              <div className="flex items-start gap-3 mb-4 p-3 bg-blue-50 rounded-lg">
-                <AlertCircle className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                <div className="text-sm text-blue-800">
+            <div className="p-6 border-t bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+              <div className="flex items-start gap-3 mb-4 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                <AlertCircle className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                <div className="text-sm text-blue-800 dark:text-blue-200">
                   <p className="font-medium">WhatsApp Checkout</p>
                   <p>Your order will be sent via WhatsApp for confirmation and payment details.</p>
                 </div>
